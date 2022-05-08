@@ -1,0 +1,55 @@
+.SingUp{
+    display: flex;
+    flex-direction: column;
+    background: #f4f4f4;
+    text-align: center;
+    width: fit-content;
+    box-shadow: 10px 5px 5px black;
+    margin: 10vh auto;
+    padding: 20px;
+}
+
+.SingUp .form-group{
+    padding: 10px;
+}
+
+.SingUp .form-group .first-form{
+    margin-top: 15px;
+}
+
+.SingUp .form-group input{
+    border: #d3caca solid 1px;
+    border-radius: 5px;
+    padding: 10px;
+}
+
+.SingUp hr{
+    margin: 10px;
+}
+
+a{
+    text-decoration: none;
+    font-size: 0.9em;
+    color: #333;
+}
+
+.need-acount p{
+    margin-bottom: 15px;
+}
+
+.btn {
+    width: 100%;
+    margin-top: 20px;
+    padding: 10px;
+    background: #D8C11A;
+    border-radius: 10px;
+    border: 1px;
+    font-size: 1.2em;
+    cursor: pointer;
+    color: #f4f4f4;
+    margin-bottom: 5px;
+  }
+  
+.btn:hover{
+    background: #e0c813;
+}

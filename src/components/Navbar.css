@@ -1,0 +1,44 @@
+.Navbar{
+    color: #f4f4f4;
+    display: flex;
+    padding: 10px;
+    justify-content: space-between;
+    background-color: #313030;
+    align-items: center;
+    font-size: 1.3em;
+}
+
+.Navbar a{
+    text-decoration: none;
+}
+
+.Navbar img{
+    height: 10vh;
+}
+
+.Navbar .logo{
+    display: flex;
+    align-items: center;
+}
+
+.Navbar .logo a{
+    color: #f4f4f4;
+}
+
+.yellow{
+    color: #D8C11A;
+  }
+
+.Navbar ul{
+    display: flex;
+    list-style: none;
+}
+
+.Navbar ul a{
+    color: #f4f4f4;
+    padding: 10px 20px;
+}
+
+.Navbar ul a:hover{
+    border-bottom: #D8C11A 2px solid;
+}
