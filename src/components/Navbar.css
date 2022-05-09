@@ -42,3 +42,14 @@
 .Navbar ul a:hover{
     border-bottom: #D8C11A 2px solid;
 }
+
+@media(max-width: 768px){
+    .Navbar{
+      flex-direction: column;
+      padding: 20px;
+    }
+  
+    .Navbar ul{
+      margin-top: 10px;
+    }
+  }
