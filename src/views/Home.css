@@ -1,8 +1,73 @@
 .Home{
-    color: #f4f4f4;
+    display: flex;
+    flex-direction: column;
+    background: #f4f4f4;
     text-align: center;
+    width: fit-content;
+    box-shadow: 10px 5px 5px black;
+    margin: 10vh auto;
+    padding: 20px;
+}
+
+.Home .skills{
+    display: flex;
+    flex-direction: row;
     align-items: center;
-    margin-top: 20px;
-    font-size: 5em;
-    margin: 10vh;
+    
+    width: 100vh;
+    background-color: #313030;
+    color: #f4f4f4;
+    margin-top: 10px;
+}
+
+.Home .logo{
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-gap: 10px;
+    align-items: center;
+
+    background: #333;
+    padding: 15px;
+}
+
+.Home .logo img{
+    height: 15vh;
+    margin: 5px;
+    transition: transform .2s;
+}
+
+.Home .logo img:hover{
+    transform: scale(1.2);
+    cursor: pointer;
+}
+
+.Home .skillText{
+    margin: 10px;
+}
+
+.Home .skillText h2{
+    margin-bottom: 10px;
+}
+
+.yellow{
+    color: #D8C11A;
+}
+
+@media(max-width: 768px){
+    .Home{
+        width: auto;
+        margin: 10vh;
+    }
+
+    .Home .skills{
+      flex-direction: column;
+      padding: 20px;
+
+      width: auto;
+
+    }
+
+    .Home img{
+        max-width: 100%;
+    }
 }

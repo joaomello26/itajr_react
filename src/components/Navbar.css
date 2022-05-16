@@ -27,7 +27,7 @@
 
 .yellow{
     color: #D8C11A;
-  }
+}
 
 .Navbar ul{
     display: flex;
@@ -52,4 +52,4 @@
     .Navbar ul{
       margin-top: 10px;
     }
-  }
+}

@@ -1,26 +1,44 @@
 import './SingUp.css'
-import React from "react";
+import React, { useState } from "react";
 
-import { Link } from 'react-router-dom'
+export default _ => {
+    const [email, useEmail] = useState("")
+    const [emailConfirm, useEmailConfirm] = useState("")
+    const [password, usePassword] = useState("")
+    const [passwordConfirm, usePasswordConfirm] = useState("")
 
-export default _ =>
-    <div className="SingUp">
-        <div>
-            <h1>Sing Up</h1>
-            <form>
-                <div class="form-group">
-                    <input type="name" className="first-form" placeholder="Enter your name" />
-                </div>
-                <div className="form-group">
-                    <input type="email" placeholder="Enter an email" />
-                </div>
-                <div className="form-group">
-                    <input type="password" placeholder="Create a password" />
-                </div>
-                <div className="form-group">
-                    <input type="password" placeholder="Confirm password" />
-                </div>
-                <button type="submit" className="btn">Sing Up</button>
-            </form>
+    return(
+        <div className="SingUp">
+            <div>
+                <h1>Sing Up</h1>
+                <form>
+                    <div className="form-group">
+                        <input type="email" className="first-form" 
+                        placeholder="Enter an email"
+                        onChange={e => useEmail(e.target.value)}/>
+                    </div>
+
+                    <div className="form-group">
+                        <input type="email" className="first-form" 
+                        placeholder="Enter an email"
+                        onChange={e => useEmailConfirm(e.target.value)}/>
+                    </div>
+
+                    <div className="form-group">
+                        <input type="password" 
+                        placeholder="Password" 
+                        onChange={e => usePassword(e.target.value)} />
+                    </div>
+
+                    <div className="form-group">
+                        <input type="password" 
+                        placeholder="Password" 
+                        onChange={e => usePasswordConfirm(e.target.value)} />
+                    </div>
+
+                    <button type="submit" className="btn">Sing Up</button>
+                </form>
+            </div>
         </div>
-    </div>
+    )
+}
