@@ -4,8 +4,8 @@ import React, { useState } from "react";
 import { Link } from 'react-router-dom'
 
 export default _ => {
-    const [email, useEmail] = useState("")
-    const [password, usePassword] = useState("")
+    const [email, setEmail] = useState("")
+    const [password, setPassword] = useState("")
 
     return(
         <div className="Login">
@@ -15,13 +15,15 @@ export default _ => {
                     <div className="form-group">
                         <input type="email" className="first-form" 
                         placeholder="Enter an email"
-                        onChange={e => useEmail(e.target.value)}/>
+                        onChange={e => setEmail(e.target.value)}
+                        value={email} />
                     </div>
 
                     <div className="form-group">
                         <input type="password" 
                         placeholder="Password" 
-                        onChange={e => usePassword(e.target.value)} />
+                        onChange={e => setPassword(e.target.value)} 
+                        value={password} />
                     </div>
 
                     <button type="submit" class="btn">Login</button>

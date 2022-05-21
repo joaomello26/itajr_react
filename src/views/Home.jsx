@@ -9,7 +9,7 @@ import skillText from './data/skillText'
 import consultoriaTecnologicaLogo from '../img/consultoriaTecnologica.png'
 
 export default _ => {
-    const [text, useText] = useState(skillText.initial)
+    const [text, setText] = useState(skillText.initial)
 
     return(
         <div className="Home">
@@ -19,19 +19,19 @@ export default _ => {
             <div className='skills'>
                 <div className="logo">
                     <img 
-                    onClick={_ => useText(skillText.html)} 
+                    onClick={_ => setText(skillText.html)} 
                     src={htmlLogo}/>
 
                     <img 
-                    onClick={_ => useText(skillText.css)} 
+                    onClick={_ => setText(skillText.css)} 
                     src={cssLogo}/>
 
                     <img 
-                    onClick={_ => useText(skillText.js)}
+                    onClick={_ => setText(skillText.js)}
                     src={jsLogo}/>
 
                     <img
-                    onClick={_ => useText(skillText.react)}
+                    onClick={_ => setText(skillText.react)}
                     src={reactLogo}/>
                 </div>
                 <div className='skillText'>

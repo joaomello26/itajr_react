@@ -8,7 +8,7 @@ export default _ =>
     <nav className='Navbar'>
         <div className='logo'>
             <a href="#"><img src={logo} alt="ITA Júnior" /></a>
-            <h1><a href="#"><span class="yellow">ITA</span> Júnior</a></h1>
+            <h1><a href="#"><span className="yellow">ITA</span> Júnior</a></h1>
         </div>
         <ul>
             <li>

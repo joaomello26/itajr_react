@@ -2,10 +2,10 @@ import './SingUp.css'
 import React, { useState } from "react";
 
 export default _ => {
-    const [email, useEmail] = useState("")
-    const [emailConfirm, useEmailConfirm] = useState("")
-    const [password, usePassword] = useState("")
-    const [passwordConfirm, usePasswordConfirm] = useState("")
+    const [email, setEmail] = useState("")
+    const [emailConfirm, setEmailConfirm] = useState("")
+    const [password, setPassword] = useState("")
+    const [passwordConfirm, setPasswordConfirm] = useState("")
 
     return(
         <div className="SingUp">
@@ -15,25 +15,29 @@ export default _ => {
                     <div className="form-group">
                         <input type="email" className="first-form" 
                         placeholder="Enter an email"
-                        onChange={e => useEmail(e.target.value)}/>
+                        onChange={e => setEmail(e.target.value)}
+                        value={email} />
                     </div>
 
                     <div className="form-group">
-                        <input type="email" className="first-form" 
+                        <input type="email" 
                         placeholder="Enter an email"
-                        onChange={e => useEmailConfirm(e.target.value)}/>
+                        onChange={e => setEmailConfirm(e.target.value)}
+                        value={emailConfirm} />
                     </div>
 
                     <div className="form-group">
                         <input type="password" 
                         placeholder="Password" 
-                        onChange={e => usePassword(e.target.value)} />
+                        onChange={e => setPassword(e.target.value)}
+                        value={password} />
                     </div>
 
                     <div className="form-group">
                         <input type="password" 
                         placeholder="Password" 
-                        onChange={e => usePasswordConfirm(e.target.value)} />
+                        onChange={e => setPasswordConfirm(e.target.value)}
+                        value={passwordConfirm} />
                     </div>
 
                     <button type="submit" className="btn">Sing Up</button>
